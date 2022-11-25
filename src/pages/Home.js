@@ -10,13 +10,11 @@ const Home = () => {
     const [exercises, setExercises] = useState([])
 
     return (
-        <div>
-            <Box>
-                <HeroBanner />
-                <SearchExercises setBodyPart={setBodyPart} bodyPart={bodyPart} setExercises={setExercises}/>
-                <Exercises exercises={exercises} bodyPart={bodyPart} setExercises={setExercises}/>
-            </Box>
-        </div>
+        <Box>
+            <HeroBanner />
+            <SearchExercises setBodyPart={setBodyPart} bodyPart={bodyPart} setExercises={setExercises}/>
+            <Exercises exercises={exercises} bodyPart={bodyPart} setExercises={setExercises}/>
+        </Box>
     )                                                       
 }
 
